@@ -13,6 +13,7 @@ public class Song {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	int id;
+	String image;
 	String name;
 	String artist;
 	String genre;
@@ -66,6 +67,13 @@ public class Song {
 	}
 	public void setPlaylists(List<Playlist> playlists) {
 		this.playlists = playlists;
+	}
+	
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
 	}
 	@Override
 	public String toString() {

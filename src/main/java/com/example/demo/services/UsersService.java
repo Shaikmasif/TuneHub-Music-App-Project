@@ -14,4 +14,6 @@ public interface UsersService {
 	public Users getUser(String email);
 	
 	public void updateUser(Users user);
+	
+	public boolean updatePassword(String email,String password);
 }

@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entities.Song;
+import com.example.demo.entities.Trending;
 import com.example.demo.repositories.SongRepository;
+import com.example.demo.repositories.TrendingSongRepository;
 @Service
 public class SongServiceImplementation implements SongService {
 	@Autowired
@@ -35,5 +37,6 @@ public class SongServiceImplementation implements SongService {
 		repo.save(song);
 		
 	}
+	
 	
 }
